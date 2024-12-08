@@ -1,0 +1,6 @@
+logs
+/dags
+/plugins
+/airflow
+__pycache__
+test.py
