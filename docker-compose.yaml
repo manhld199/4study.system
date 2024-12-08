@@ -311,6 +311,7 @@ services:
     container_name: kafka-1
     ports:
       - "9092:9092"
+      - "9093:9093"
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
@@ -331,3 +332,7 @@ services:
 
 volumes:
   postgres-db-volume:
+
+networks:
+  default:
+    name: airflow_kafka_network
